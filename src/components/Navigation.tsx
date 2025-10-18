@@ -2,17 +2,12 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+  return <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container-width">
         <div className="flex items-center justify-between h-16 px-6">
-          <Link to="/" className="text-2xl font-bold text-primary">
-            AgeTechSF
-          </Link>
+          <Link to="/" className="text-2xl font-bold text-primary">AgeTech SF</Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
@@ -34,45 +29,24 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2"
-            aria-label="Toggle menu"
-          >
+          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2" aria-label="Toggle menu">
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="md:hidden border-t border-border bg-background">
+        {isOpen && <div className="md:hidden border-t border-border bg-background">
             <div className="flex flex-col gap-4 p-6">
-              <Link
-                to="/"
-                onClick={() => setIsOpen(false)}
-                className="text-foreground hover:text-primary transition-colors"
-              >
+              <Link to="/" onClick={() => setIsOpen(false)} className="text-foreground hover:text-primary transition-colors">
                 Home
               </Link>
-              <Link
-                to="/events"
-                onClick={() => setIsOpen(false)}
-                className="text-foreground hover:text-primary transition-colors"
-              >
+              <Link to="/events" onClick={() => setIsOpen(false)} className="text-foreground hover:text-primary transition-colors">
                 Events
               </Link>
-              <Link
-                to="/impact"
-                onClick={() => setIsOpen(false)}
-                className="text-foreground hover:text-primary transition-colors"
-              >
+              <Link to="/impact" onClick={() => setIsOpen(false)} className="text-foreground hover:text-primary transition-colors">
                 Impact
               </Link>
-              <Link
-                to="/contact"
-                onClick={() => setIsOpen(false)}
-                className="text-foreground hover:text-primary transition-colors"
-              >
+              <Link to="/contact" onClick={() => setIsOpen(false)} className="text-foreground hover:text-primary transition-colors">
                 Contact
               </Link>
               <Button variant="default" size="sm" asChild>
@@ -81,11 +55,8 @@ const Navigation = () => {
                 </Link>
               </Button>
             </div>
-          </div>
-        )}
+          </div>}
       </div>
-    </nav>
-  );
+    </nav>;
 };
-
 export default Navigation;
