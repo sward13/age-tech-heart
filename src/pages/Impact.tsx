@@ -2,7 +2,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Quote } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import impactImage from "@/assets/impact-story-1.jpg";
+import impactImage1 from "@/assets/impact-story-1.jpg";
+import impactImage2 from "@/assets/impact-story-2.jpg";
+import impactImage3 from "@/assets/impact-story-3.jpg";
 
 const Impact = () => {
   const stories = [
@@ -10,7 +12,7 @@ const Impact = () => {
       title: "Empowering Digital Literacy",
       description:
         "Through our weekly tech workshops, over 500 older adults have gained confidence using smartphones, tablets, and essential apps for staying connected with family.",
-      image: impactImage,
+      image: impactImage1,
       quote: "I never thought I'd be video calling my grandkids across the country. Now it's part of my daily routine.",
       author: "Margaret, 72",
     },
@@ -19,6 +21,7 @@ const Impact = () => {
       description:
         "Collaborated with a local startup to pilot user-friendly health monitoring devices, leading to early detection of health issues for 50+ community members.",
       stats: "93% user satisfaction",
+      image: impactImage2,
       quote: "The device is so simple to use, and it gives me peace of mind knowing my vitals are being tracked.",
       author: "Robert, 68",
     },
@@ -27,6 +30,7 @@ const Impact = () => {
       description:
         "Launched a neighborhood social platform connecting isolated seniors with local volunteers for errands, companionship, and tech support.",
       stats: "200+ connections made",
+      image: impactImage3,
       quote: "Having someone to call when I need help has been life-changing. I feel less alone.",
       author: "Dorothy, 81",
     },
