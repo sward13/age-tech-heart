@@ -30,26 +30,14 @@ const Events = () => {
         <div className="container-width">
           <div className="mb-12 text-center">
             <h2 className="mb-4">Upcoming Events</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-4">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Join us at one of our upcoming events to meet innovators, share ideas, and
               contribute to making aging better for everyone.
             </p>
-            <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-lg text-sm font-medium">
-              <span>📅</span>
-              <span>Looking for today's events or past events?</span>
-              <a 
-                href="https://luma.com/agetechsf?k=c" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="underline hover:text-accent-foreground"
-              >
-                View full calendar
-              </a>
-            </div>
           </div>
 
           {/* Luma Calendar Embed - Upcoming Events */}
-          <div className="w-full mb-12">
+          <div className="w-full mb-8">
             <iframe
               src="https://lu.ma/embed/calendar/cal-FUnbXPr2shgbmu9/events?lt=light"
               width="100%"
@@ -64,6 +52,21 @@ const Events = () => {
               tabIndex={0}
               title="AgeTech SF Upcoming Events"
             ></iframe>
+          </div>
+
+          {/* Past Events Link */}
+          <div className="text-center mb-12">
+            <p className="text-muted-foreground">
+              Check out our past events:{" "}
+              <a 
+                href="https://luma.com/calendar/manage/cal-FUnbXPr2shgbmu9/events?period=past" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline font-medium"
+              >
+                View calendar
+              </a>
+            </p>
           </div>
 
           {/* Call to Action */}
