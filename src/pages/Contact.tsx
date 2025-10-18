@@ -45,9 +45,9 @@ const Contact = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-[300px] flex items-center justify-center gradient-hero overflow-hidden mt-16">
-        <div className="relative z-10 text-center px-6">
+        <div className="relative z-10 text-center px-6 text-white">
           <h1 className="mb-4">Get in Touch</h1>
-          <p className="text-xl max-w-2xl mx-auto text-white opacity-95">
+          <p className="text-xl max-w-2xl mx-auto opacity-95">
             Join our community or learn more about how we're making aging better
           </p>
         </div>
