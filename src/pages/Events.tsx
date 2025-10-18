@@ -9,7 +9,7 @@ const Events = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative min-h-[400px] flex items-center justify-center bg-primary overflow-hidden mt-16">
+      <section className="relative min-h-[400px] flex items-center justify-center gradient-hero overflow-hidden mt-16">
         <div className="absolute inset-0 opacity-20">
           <img
             src={eventImage}

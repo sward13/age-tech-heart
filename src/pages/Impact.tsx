@@ -48,7 +48,7 @@ const Impact = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative min-h-[400px] flex items-center justify-center bg-secondary overflow-hidden mt-16">
+      <section className="relative min-h-[400px] flex items-center justify-center gradient-hero overflow-hidden mt-16">
         <div className="relative z-10 text-center px-6 text-white">
           <h1 className="mb-4">Our Impact</h1>
           <p className="text-xl max-w-2xl mx-auto opacity-95">
