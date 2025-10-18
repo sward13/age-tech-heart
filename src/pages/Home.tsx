@@ -5,29 +5,20 @@ import { Users, Calendar, Lightbulb, Heart } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-community.jpg";
-
 const Home = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navigation />
 
       {/* Hero Section */}
       <section className="relative min-h-[600px] md:min-h-[700px] flex items-center justify-center gradient-hero overflow-hidden mt-16">
         <div className="absolute inset-0 opacity-20">
-          <img
-            src={heroImage}
-            alt="Diverse intergenerational community collaborating with technology"
-            className="w-full h-full object-cover"
-          />
+          <img src={heroImage} alt="Diverse intergenerational community collaborating with technology" className="w-full h-full object-cover" />
         </div>
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto text-white">
           <h1 className="mb-6 animate-fade-in">
             Making Aging Better for Everyone
           </h1>
-          <p className="text-xl md:text-2xl mb-8 leading-relaxed animate-fade-in opacity-95">
-            A Bay Area community of innovators improving the lives of older adults through
-            technology, design, and collaboration.
-          </p>
+          <p className="text-xl md:text-2xl mb-8 leading-relaxed animate-fade-in opacity-95">A Bay Area community of innovators improving the lives of older adults and caregivers through technology, design, and collaboration.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
             <Button variant="hero" size="lg" asChild>
               <Link to="/contact">Join Our Community</Link>
@@ -149,8 +140,6 @@ const Home = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
