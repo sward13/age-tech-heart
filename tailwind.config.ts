@@ -13,7 +13,17 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        serif: ['Merriweather', 'Georgia', 'serif'],
+        sans: ['-apple-system', 'BlinkMacSystemFont', 'Inter', 'Open Sans', 'Segoe UI', 'sans-serif'],
+      },
       colors: {
+        'vital-green': 'hsl(var(--vital-green))',
+        'fresh-lime': 'hsl(var(--fresh-lime))',
+        'warm-terracotta': 'hsl(var(--warm-terracotta))',
+        'bright-coral': 'hsl(var(--bright-coral))',
+        'rich-gold': 'hsl(var(--rich-gold))',
+        'deep-forest': 'hsl(var(--deep-forest))',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
