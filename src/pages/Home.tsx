@@ -21,7 +21,7 @@ const Home = () => {
           <p className="text-xl md:text-2xl mb-8 leading-relaxed animate-fade-in opacity-95">A Bay Area community of innovators improving the lives of older adults and caregivers through technology, design, and collaboration.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
             <Button variant="hero" size="lg" asChild>
-              <Link to="/contact">Join Our Community</Link>
+              <a href="https://forms.gle/oahTbtZFRDx2QAAh9" target="_blank" rel="noopener noreferrer">Join Our Community</a>
             </Button>
             <Button variant="secondary" size="lg" asChild>
               <Link to="/events">Upcoming Events</Link>
@@ -134,7 +134,7 @@ const Home = () => {
             better for everyone.
           </p>
           <Button variant="hero" size="lg" asChild>
-            <Link to="/contact">Join AgeTech SF Today</Link>
+            <a href="https://forms.gle/oahTbtZFRDx2QAAh9" target="_blank" rel="noopener noreferrer">Join AgeTech SF Today</a>
           </Button>
         </div>
       </section>
