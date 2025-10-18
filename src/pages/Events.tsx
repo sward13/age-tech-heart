@@ -30,14 +30,26 @@ const Events = () => {
         <div className="container-width">
           <div className="mb-12 text-center">
             <h2 className="mb-4">Upcoming Events</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-4">
               Join us at one of our upcoming events to meet innovators, share ideas, and
               contribute to making aging better for everyone.
             </p>
+            <div className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-2 rounded-lg text-sm font-medium">
+              <span>📅</span>
+              <span>Looking for today's events or past events?</span>
+              <a 
+                href="https://luma.com/agetechsf?k=c" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="underline hover:text-accent-foreground"
+              >
+                View full calendar
+              </a>
+            </div>
           </div>
 
           {/* Luma Calendar Embed - Upcoming Events */}
-          <div className="w-full mb-16">
+          <div className="w-full mb-12">
             <iframe
               src="https://lu.ma/embed/calendar/cal-gzFpjdqyS3Zl58m/events?lt=light"
               width="100%"
@@ -51,33 +63,6 @@ const Events = () => {
               aria-hidden="false"
               tabIndex={0}
               title="AgeTechSF Upcoming Events"
-            ></iframe>
-          </div>
-
-          {/* Past Events Section */}
-          <div className="mb-12">
-            <div className="accent-bar mb-8"></div>
-            <h2 className="mb-4 text-center">Past Events</h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-center mb-8">
-              Explore our previous gatherings and see the amazing community we've built together.
-            </p>
-          </div>
-
-          {/* Luma Calendar Embed - Past Events */}
-          <div className="w-full mb-12">
-            <iframe
-              src="https://lu.ma/embed/agetechsf?period=past"
-              width="100%"
-              height="600"
-              frameBorder="0"
-              style={{
-                border: '1px solid hsl(var(--border))',
-                borderRadius: 'var(--radius)',
-              }}
-              allowFullScreen
-              aria-hidden="false"
-              tabIndex={0}
-              title="AgeTechSF Past Events"
             ></iframe>
           </div>
 
