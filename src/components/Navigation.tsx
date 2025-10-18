@@ -2,12 +2,15 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/agetech-logo.png";
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   return <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container-width">
         <div className="flex items-center justify-between h-16 px-6">
-          <Link to="/" className="text-2xl font-bold text-primary">AgeTech SF</Link>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="AgeTech SF" className="h-12" />
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
