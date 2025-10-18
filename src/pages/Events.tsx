@@ -51,7 +51,7 @@ const Events = () => {
           {/* Luma Calendar Embed - Upcoming Events */}
           <div className="w-full mb-12">
             <iframe
-              src="https://lu.ma/embed/calendar/cal-gzFpjdqyS3Zl58m/events?lt=light"
+              src="https://lu.ma/embed/calendar/cal-FUnbXPr2shgbmu9/events?lt=light"
               width="100%"
               height="800"
               frameBorder="0"
