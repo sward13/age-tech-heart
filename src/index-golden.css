@@ -499,6 +499,10 @@
   }
 
 /* Gradient Utilities */
+  .gradient-hero {
+    background: linear-gradient(135deg, var(--color-rich-amber) 0%, var(--color-warm-coral) 100%);
+  }
+
   .gradient-golden {
     background: linear-gradient(135deg, var(--color-golden-yellow) 0%, var(--color-rich-amber) 100%);
   }
