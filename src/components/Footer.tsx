@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container-width section-padding">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <h3 className="text-xl font-bold text-primary mb-4">AgeTechSF</h3>
+            <h3 className="text-xl font-bold text-primary mb-4">AgeTech SF</h3>
             <p className="text-muted-foreground">
               A Bay Area community improving lives through technology, design, and collaboration.
             </p>
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-border text-center text-muted-foreground text-sm">
-          © {new Date().getFullYear()} AgeTechSF. All rights reserved.
+          © {new Date().getFullYear()} AgeTech SF. All rights reserved.
         </div>
       </div>
     </footer>

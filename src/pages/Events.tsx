@@ -62,7 +62,7 @@ const Events = () => {
               allowFullScreen
               aria-hidden="false"
               tabIndex={0}
-              title="AgeTechSF Upcoming Events"
+              title="AgeTech SF Upcoming Events"
             ></iframe>
           </div>
 

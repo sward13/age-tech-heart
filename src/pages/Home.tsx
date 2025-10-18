@@ -134,7 +134,7 @@ const Home = () => {
             better for everyone.
           </p>
           <Button variant="hero" size="lg" asChild>
-            <Link to="/contact">Join AgeTechSF Today</Link>
+            <Link to="/contact">Join AgeTech SF Today</Link>
           </Button>
         </div>
       </section>
