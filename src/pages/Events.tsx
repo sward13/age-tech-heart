@@ -66,7 +66,7 @@ const Events = () => {
           {/* Luma Calendar Embed - Past Events */}
           <div className="w-full mb-12">
             <iframe
-              src="https://lu.ma/embed/calendar/cal-gzFpjdqyS3Zl58m/events?lt=light&period=past"
+              src="https://lu.ma/embed/agetechsf?period=past"
               width="100%"
               height="600"
               frameBorder="0"
