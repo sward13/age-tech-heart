@@ -39,7 +39,7 @@ const Impact = () => {
   const metrics = [
     { number: "1,500+", label: "Community Members" },
     { number: "50+", label: "Innovation Projects" },
-    { number: "200+", label: "Events Hosted" },
+    { number: "201+", label: "Events Hosted" },
     { number: "25+", label: "Partner Organizations" },
   ];
 
