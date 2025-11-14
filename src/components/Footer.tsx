@@ -13,7 +13,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <h5 className="font-semibold mb-4">Quick Links</h5>
             <div className="flex flex-col gap-2">
               <Link to="/" className="text-muted-foreground hover:text-primary transition-colors">
                 Home
@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Connect</h4>
+            <h5 className="font-semibold mb-4">Connect</h5>
             <p className="text-muted-foreground mb-2">
               Join our community of innovators making aging better for everyone.
             </p>

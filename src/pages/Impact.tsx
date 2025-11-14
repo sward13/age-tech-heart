@@ -89,7 +89,7 @@ const Impact = () => {
                 </div>
 
                 <div className={index % 2 === 1 ? "lg:col-start-1 lg:row-start-1" : ""}>
-                  <h2 className="mb-4">{story.title}</h2>
+                  <h3 className="mb-4">{story.title}</h3>
                   <p className="text-lg text-muted-foreground mb-6">{story.description}</p>
 
                   {story.stats && (

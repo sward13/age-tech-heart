@@ -23,7 +23,7 @@ const Home = () => {
             <Button variant="hero" size="lg" asChild>
               <a href="https://forms.gle/oahTbtZFRDx2QAAh9" target="_blank" rel="noopener noreferrer">Join Our Community</a>
             </Button>
-            <Button variant="secondary" size="lg" asChild>
+            <Button variant="default" size="lg" asChild>
               <Link to="/events">Upcoming Events</Link>
             </Button>
           </div>

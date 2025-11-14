@@ -15,7 +15,7 @@ export default {
     extend: {
       fontFamily: {
         serif: ['Merriweather', 'Georgia', 'serif'],
-        sans: ['-apple-system', 'BlinkMacSystemFont', 'Inter', 'Open Sans', 'Segoe UI', 'sans-serif'],
+        sans: ['Bitter', '-apple-system', 'BlinkMacSystemFont', 'Inter', 'Open Sans', 'Segoe UI', 'sans-serif'],
       },
       colors: {
         'vital-green': 'hsl(var(--vital-green))',
