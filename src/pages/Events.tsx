@@ -50,7 +50,7 @@ const Events = () => {
             <p className="text-muted-foreground">
               Check out our past events:{" "}
               <a
-                href="https://luma.com/calendar/manage/cal-FUnbXPr2shgbmu9/events?period=past"
+                href="https://luma.com/agetechsf?period=past"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline font-medium"
@@ -62,17 +62,14 @@ const Events = () => {
 
           {/* Call to Action */}
           <div className="bg-muted rounded-lg p-8 md:p-12 text-center">
-            <h3 className="mb-4">Want to host or sponsor an event?</h3>
+            <h3 className="mb-4">Want to partner on an event?</h3>
             <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
               We're always looking for partners who share our mission to improve aging through
               innovation and community.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="default" size="lg">
-                Become a sponsor
-              </Button>
-              <Button variant="outline" size="lg">
-                Volunteer with us
+              <Button variant="default" size="lg" asChild>
+                <a href="mailto:agetechsf@gmail.com">Contact us</a>
               </Button>
             </div>
           </div>
