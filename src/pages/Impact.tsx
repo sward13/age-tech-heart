@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 import { Quote } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -121,18 +122,18 @@ const Impact = () => {
             truly matter.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-flex items-center justify-center rounded-md text-sm font-medium bg-primary text-primary-foreground h-11 px-8 shadow-soft hover:bg-primary/90 transition-colors"
             >
               Get Involved
-            </a>
-            <a
-              href="/events"
+            </Link>
+            <Link
+              to="/events"
               className="inline-flex items-center justify-center rounded-md text-sm font-medium border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8 transition-colors"
             >
               View Upcoming Events
-            </a>
+            </Link>
           </div>
         </div>
       </section>

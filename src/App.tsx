@@ -11,12 +11,18 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+/** GitHub project pages use `vite build --base /repo/`; basename must match. */
+const routerBasename =
+  import.meta.env.BASE_URL.length > 1
+    ? import.meta.env.BASE_URL.replace(/\/$/, "")
+    : undefined;
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename={routerBasename}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/events" element={<Events />} />
