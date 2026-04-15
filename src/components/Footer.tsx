@@ -8,7 +8,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold text-primary mb-4">AgeTech SF</h3>
             <p className="text-muted-foreground">
-              A Bay Area community improving lives through technology, design, and collaboration.
+              Creating a world where everyone ages with dignity, possibility, and purpose.
             </p>
           </div>
 
@@ -20,9 +20,6 @@ const Footer = () => {
               </Link>
               <Link to="/events" className="text-muted-foreground hover:text-primary transition-colors">
                 Events
-              </Link>
-              <Link to="/impact" className="text-muted-foreground hover:text-primary transition-colors">
-                Impact
               </Link>
               <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
                 Contact

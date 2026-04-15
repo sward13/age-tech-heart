@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, MapPin, Users } from "lucide-react";
+import contactImage from "@/assets/contact.jpg";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { useToast } from "@/hooks/use-toast";
@@ -19,7 +20,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Simple client-side validation
     if (!formData.name || !formData.email || !formData.message) {
       toast({
@@ -45,8 +46,11 @@ const Contact = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-[300px] flex items-center justify-center gradient-hero overflow-hidden mt-16">
+        <div className="absolute inset-0">
+          <img src={contactImage} alt="" className="w-full h-full object-cover opacity-20" />
+        </div>
         <div className="relative z-10 text-center px-6 text-white">
-          <h1 className="mb-4">Get in Touch</h1>
+          <h1 className="mb-4">Get in touch</h1>
           <p className="text-xl max-w-2xl mx-auto opacity-95">
             Join our community or learn more about how we're making aging better
           </p>
@@ -136,9 +140,9 @@ const Contact = () => {
                       <Mail className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold mb-1">Email Us</h3>
+                      <h3 className="font-semibold mb-1">Email us</h3>
                       <p className="text-muted-foreground text-sm">
-                        hello@agetechsf.org
+                        agetechsf@gmail.com
                       </p>
                     </div>
                   </div>
@@ -163,25 +167,9 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-card">
-                <CardContent className="pt-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Users className="w-6 h-6 text-accent" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold mb-1">Community</h3>
-                      <p className="text-muted-foreground text-sm">
-                        Join 1,500+ innovators improving aging through technology
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
               <Card className="bg-muted shadow-card">
                 <CardContent className="pt-6">
-                  <h3 className="font-semibold mb-2">Ways to Get Involved</h3>
+                  <h3 className="font-semibold mb-2">Ways to get involved</h3>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• Attend our monthly meetups</li>
                     <li>• Volunteer at workshops</li>
