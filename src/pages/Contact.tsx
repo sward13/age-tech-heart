@@ -142,7 +142,7 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold mb-1">Email us</h3>
                       <p className="text-muted-foreground text-sm">
-                        agetechsf@gmail.com
+                        <a href="mailto:agetechsf@gmail.com">agetechsf@gmail.com</a>
                       </p>
                     </div>
                   </div>
