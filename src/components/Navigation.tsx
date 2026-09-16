@@ -44,9 +44,6 @@ const Navigation = () => {
           <Link to="/events" onClick={() => setIsOpen(false)} className="text-foreground hover:text-primary transition-colors">
             Events
           </Link>
-          <Link to="/impact" onClick={() => setIsOpen(false)} className="text-foreground hover:text-primary transition-colors">
-            Impact
-          </Link>
           <Link to="/contact" onClick={() => setIsOpen(false)} className="text-foreground hover:text-primary transition-colors">
             Contact
           </Link>
